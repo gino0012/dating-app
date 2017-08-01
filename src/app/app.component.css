@@ -1,0 +1,11 @@
+md-grid-tile {
+  background: lightblue;
+}
+
+md-grid-list {
+    height: 100vh
+}
+
+app-profile, app-search {
+    width: 100%;
+}

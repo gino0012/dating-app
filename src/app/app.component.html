@@ -1,1 +1,15 @@
-﻿<md-toolbar color="primary">My App</md-toolbar>
+﻿<header>
+    <app-navigation-bar></app-navigation-bar>
+</header>
+
+<main>
+    <md-grid-list cols="12" rowHeight="fit">
+        <md-grid-tile [colspan]='3' [rowspan]='3'>
+            <app-profile></app-profile>
+        </md-grid-tile>
+        <md-grid-tile [colspan]='9' [rowspan]='7'></md-grid-tile>
+        <md-grid-tile [colspan]='3' [rowspan]='4'>
+            <app-search></app-search>
+        </md-grid-tile>
+    </md-grid-list>
+</main>
