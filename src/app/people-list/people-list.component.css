@@ -5,3 +5,11 @@
 div.person-profile {
     width: 100%;
 } */
+
+.card-img-top {
+    height: 200px;
+}
+
+.card {
+    margin: 15px 15px;
+}

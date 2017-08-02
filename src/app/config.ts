@@ -1,4 +1,9 @@
 export class Config {
+    public USER = {
+        firstName: 'Juan',
+        lastName: 'Dela Cruz'
+    };
+
     public PEOPLE = [
         {
             firstName: 'Gendry',
