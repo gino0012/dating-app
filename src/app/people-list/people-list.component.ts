@@ -1,5 +1,6 @@
+import { ChatComponent } from './../chat/chat.component';
 import { Config } from './../config';
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-people-list',
@@ -14,6 +15,9 @@ export class PeopleListComponent implements OnInit {
   }
 
   ngOnInit() {
+    setTimeout(() => {
+      this._config.showChat = true;
+    }, this._config.TIME_TO_CHAT);
   }
 
 }

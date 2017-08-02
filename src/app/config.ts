@@ -1,7 +1,20 @@
 export class Config {
+    public showChat = false;
+
+    public TIME_TO_CHAT = 1000;
     public USER = {
-        firstName: 'Juan',
-        lastName: 'Dela Cruz'
+        firstName: 'Angel',
+        lastName: '',
+        img: 'noImage.jpg'
+    };
+
+    public LOVER_BOY = {
+        firstName: 'Jaime',
+        lastName: '',
+        city: 'Quezon',
+        country: 'Philippines',
+        age: '29',
+        img: 'jaime.jpg'
     };
 
     public PEOPLE = [
@@ -20,6 +33,14 @@ export class Config {
             country: 'Philippines',
             age: '28',
             img: 'gong_yoo.png'
+        },
+        {
+            firstName: 'Jaime',
+            lastName: '',
+            city: 'Quezon',
+            country: 'Philippines',
+            age: '29',
+            img: 'jaime.jpg'
         },
         {
             firstName: 'Jaime',
@@ -102,14 +123,6 @@ export class Config {
             img: 'lee_min_ho.jpg'
         },
         {
-            firstName: 'xxx',
-            lastName: 'xxx',
-            city: 'Quezon',
-            country: 'Philippines',
-            age: '29',
-            img: 'xxx'
-        },
-        {
             firstName: 'Park bo',
             lastName: 'Gum',
             city: 'Quezon',
@@ -165,5 +178,146 @@ export class Config {
             age: '26',
             img: 'yoo_seung_ho.jpg'
         }
+    ];
+
+    public CONVO = [
+        {
+            author: 'jaime',
+            body: 'Hi',
+            interval: '0'
+        },
+        {
+            author: 'jaime',
+            body: 'Hello :)',
+            interval: '3000'
+        },
+        {
+            author: 'jaime',
+            body: 'Hi! Pwede ba makipagkilala?',
+            interval: '4000'
+        },
+        {
+            author: 'jaime',
+            body: 'grabe! suplada naman :(',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: 'Ano ba?!'
+        },
+        {
+            author: 'jaime',
+            body: 'Makikipagkilala lang naman. Ako pala si Jaime',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: 'Ako naman si Angel'
+        },
+        {
+            author: 'jaime',
+            body: 'Wow! ganda naman ng pangalan mo',
+            interval: '4000'
+        },
+    ];
+    public CONVO2 = [
+        {
+            author: 'jaime',
+            body: 'Hi Angel ng buhay ko!',
+            interval: '3000'
+        },
+        {
+            author: 'jaime',
+            body: 'reply naman oh =( ',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: 'sorry medyo busy lang, di napansin messages mo'
+        },
+        {
+            author: 'jaime',
+            body: 'Kelangan pa ba ng notification para...',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: 'para??'
+        },
+        {
+            author: 'jaime',
+            body: 'para malaman mong like kita <3',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: 'ewan ko sayo'
+        },
+        {
+            author: 'jaime',
+            body: 'Eh kung iblock kaya kita dito?',
+            interval: '4000'
+        },
+        {
+            author: 'angel',
+            body: '=('
+        },
+        {
+            author: 'jaime',
+            body: 'tutal naman ang tingin ko saiyo, eh more than just a friend <3',
+            interval: '5000'
+        },
+        {
+            author: 'angel',
+            body: 'huh! corny mo!'
+        },
+        {
+            author: 'jaime',
+            body: 'hahaha! oh sige na, bye for now baby butterfly :*',
+            interval: '5000'
+        },
+
+    ];
+    public CONVO3 = [
+        {
+            author: 'jaime',
+            body: 'send ka naman ng picture',
+            interval: '3000'
+        },
+        {
+            author: 'angel',
+            body: 'eh nahihiya ako',
+            interval: '3000'
+        },
+        {
+            author: 'jaime',
+            body: 'ok lang yan, ganda mo kaya. pangalan palang oh!',
+            interval: '5000'
+        },
+        {
+            author: 'angel',
+            body: 'sige na nga, kulit mo eh',
+            interval: '3000'
+        },
+        {
+            author: 'angel',
+            pic: 'pic1.jpg',
+            interval: '3000'
+        },
+        {
+            author: 'angel',
+            pic: 'pic2.jpg',
+            interval: '3000'
+        },
+        {
+            author: 'angel',
+            pic: 'pic3.jpg',
+            interval: '3000'
+        },
+        {
+            author: 'jaime',
+            body: 'Wow! ganda talga! sana makita na kita',
+            interval: '5000'
+        },
     ];
 }

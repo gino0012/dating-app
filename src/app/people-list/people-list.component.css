@@ -11,5 +11,11 @@ div.person-profile {
 }
 
 .card {
+    width: 100%;
     margin: 15px 15px;
+}
+
+.row > div.lists[class*='col-'] {
+  display: flex;
+  flex:1 0 auto;
 }
