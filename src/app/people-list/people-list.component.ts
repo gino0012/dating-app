@@ -15,9 +15,14 @@ export class PeopleListComponent implements OnInit {
   }
 
   ngOnInit() {
-    setTimeout(() => {
-      this._config.showChat = true;
-    }, this._config.TIME_TO_CHAT);
+    // setTimeout(() => {
+    //   this._config.showChat = true;
+    // }, this._config.TIME_TO_CHAT);
+    document.addEventListener("keyup", (e) => {
+      if (e.which === 13) {
+        this._config.showChat = true;
+      }
+    });
   }
 
 }

@@ -1,7 +1,7 @@
 export class Config {
     public showChat = false;
 
-    public TIME_TO_CHAT = 1000;
+    public TIME_TO_CHAT = 5000;
     public USER = {
         firstName: 'Angel',
         lastName: '',
