@@ -1,0 +1,33 @@
+<!-- <md-grid-list cols="4">
+    <md-grid-tile *ngFor="let person of peopleList">
+      <div class="person-profile">
+        <md-card class="person">
+          <md-card-header>
+            <md-card-title>{{person.firstName + ' ' + person.lastName}}</md-card-title>
+          </md-card-header>
+          <img md-card-image src="/assets/{{person.img}}">
+          <md-card-content>
+          </md-card-content>
+          <md-card-actions>
+            <button color="primary" md-button md-mini-fab><md-icon>add</md-icon></button>
+          </md-card-actions>
+        </md-card>
+      </div>
+    </md-grid-tile>
+</md-grid-list> -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let person of peopleList">
+      <div class="card">
+        <img class="card-img-top" src="/assets/{{person.img}}" alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title">{{person.firstName + ' ' + person.lastName}}</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
