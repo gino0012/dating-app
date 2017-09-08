@@ -1,0 +1,21 @@
+/* md-card.person {
+   margin:10px;
+}
+
+div.person-profile {
+    width: 100%;
+} */
+
+.card-img-top {
+    height: 200px;
+}
+
+.card {
+    width: 100%;
+    margin: 15px 15px;
+}
+
+.row > div.lists[class*='col-'] {
+  display: flex;
+  flex:1 0 auto;
+}

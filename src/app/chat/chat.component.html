@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row margin">
+            <div class="col-lg-12 d-flex justify-content-end">
+                <a href="#" class="btn btn-primary" (click)="back()">Back</a>
+            </div>
+        </div>
+        <div class="row" style="height:70vh">
+            <div class="col-lg-3">
+                <div class=" card">
+                    <img class="card-img-top" src="/assets/{{loverBoy.img}}" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">{{ loverBoy.firstName + ' ' + loverBoy.lastName }}, {{loverBoy.age}}</h4>
+                    <p class="card-text">{{loverBoy.city + ', ' + loverBoy.country}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat col-lg-9">
+                <div class="convo" id="convo">
+                    <ul class="list-group" id="convoUl">
+                        <li class="list-group-item media" *ngFor="let msg of convo">
+                            <img *ngIf="msg.author==='angel'" class="d-flex mr-3" src="/assets/{{user.img}}" alt="Generic placeholder image">
+                            <div class="media-body">
+                                {{msg.body}}
+                                <img *ngIf="msg.pic" src="/assets/{{msg.pic}}" alt=""/>
+                            </div>
+                            <img *ngIf="msg.author==='jaime'" class="d-flex mr-3" src="/assets/{{loverBoy.img}}" alt="Generic placeholder image">
+                        </li>
+                    </ul>
+                </div>
+                <div class="msg form-group row">
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" [(ngModel)]="msg" (keyup.enter)="send()">
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="btn btn-primary" (click)="send()">Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

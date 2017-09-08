@@ -1,0 +1,14 @@
+li.media img {
+    width: 64px;
+    height: 64px;
+}
+
+.chat .convo {
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+div.margin {
+    margin: 15px 0;
+}

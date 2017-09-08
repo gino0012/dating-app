@@ -1,0 +1,23 @@
+<div class="container" *ngIf="!_config.showChat">
+  <div class="row">
+    <h4>
+      Recommended Matches 
+      <span class="badge badge-pill badge-default">Improve Matches</span>
+      <span class="badge badge-pill badge-primary">See all matches</span>
+    </h4>
+  </div>  
+  <div class="row">
+    <div class="lists col-lg-3" *ngFor="let person of peopleList">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="/assets/{{person.img}}" alt="">
+        <div class="card-block">
+            <h4 class="card-title">{{person.firstName + ' ' + person.lastName}}, {{person.age}}</h4>
+            <p class="card-text">{{person.city + ', ' + person.country}}</p>
+            <a href="#" class="btn btn-primary">Chat</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-chat *ngIf="_config.showChat"></app-chat>
